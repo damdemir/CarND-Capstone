@@ -29,6 +29,9 @@ Run the docker file
 ```bash
 docker run -p 4567:4567 -v $PWD:/capstone -v /tmp/log:/root/.ros/ --rm -it capstone
 ```
+### Implementation
+In this project. It is aimed to make the car drive autonomously. It should be able to track the lane, detect traffic signs. According to traffic signs it stops or moves.
+To achieve that, First, the waypoints that car will follow are implemented. These waypoints is used to car drive in the lane driverless. Second, the traffic signs are detected. As a result, the waypoints are updated according to the traffic circumstances. 
 
 ### Port Forwarding
 To set up port forwarding, please refer to the "uWebSocketIO Starter Guide" found in the classroom (see Extended Kalman Filter Project lesson).
